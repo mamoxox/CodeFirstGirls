@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #c64b14;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  text-align: left;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding-left: 15px;
+  border-bottom: 1px solid #888;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #d39f27;
+}
+
+.nav a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}
+
+/* Sub Menus */
+.nav li li {
+  font-size: .8em;
+}
+
+/*******************************************
+   Style menu for larger screens
+
+   Using 650px (130px each * 5 items), but ems
+   or other values could be used depending on other factors
+********************************************/
+
+@media screen and (min-width: 650px) {
+  .nav li {
+    width: 130px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  .nav a {
+    border-bottom: none;
+  }
+
+  .nav > ul > li {
+    text-align: center;
+  }
+
+  .nav > ul > li > a {
+    padding-left: 0;
+  }
+
+  /* Sub Menus */
+  .nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+  }
+
+  .nav li:hover ul {
+    display: block;
+  }
+
+  .nav li ul li {
+    display: block;
+  }
+}
+
+.jumbotron{
+background-image: url(../images/dots.jpg);
+background-size: cover;
+background-attachment: fixed;
+min-height: 600px;
+}
+
+.navbar-brand{
+	float: left;
+	font-size: 30px;
+	font-family:cursive;
+}
+
+.nav{
+	background-color: #c64b14;
+}
+
+.img-responsive{
+	width: auto;
+	height: auto;
+}
+
+h2{
+	float: left;
+	text color: #000000;
+	font-weight: bolder;
+}
+#buzz{
+	text color: #000000;
+	font-weight: 400;
+	color: blue;
+}
+
+.text-center{
+	text color: #000000;
+	font-weight: 400;
+	text-align:justify;
+	text-justify:inter-word;
+}
+/*.boxed {
+  border: 1px solid green;
+	display: inline-block;
+	border-style: groove;
+	border-radius: 40px/20px;
+}
+
+.container {
+  text-align: center;
+}*/
+
+
+
+
+			/*@font_face is a CSS rule which allows you to show a font on a Web page even if that
+			font is not installed on the users' computer */
+			@font-face {
+				font-family: 'QuicksandBook';
+				src: url('fonts/Quicksand_Book-webfont.eot');
+				src: url('fonts/Quicksand_Book-webfont.eot?#iefix') format('embedded-opentype'),
+					url('fonts/Quicksand_Book-webfont.woff') format('woff'),
+					url('fonts/Quicksand_Book-webfont.ttf') format('truetype'),
+					url('fonts/Quicksand_Book-webfont.svg#QuicksandBook') format('svg');
+				font-weight: normal;
+				font-style: normal;}
+			body {
+				color: #ffffff;
+				background: #c64b14 url("../images/background.png");
+				font-family: Georgia, "Times New Roman", Times, serif;
+				font-size: 90%;
+				margin: 0px;
+				text-align: center;}
+			a {
+				color: #b5c1ad;
+				text-decoration: none;}
+			a:hover {
+				color: #ffffff;}
+			.header {
+				background-image: url("../images/background.png");
+				padding: 0px 0px 0px 0px;
+				height: 100px;
+				position: fixed;
+				top: 0px;
+				width: 100%;
+				z-index: 50;}
+			.nav {
+				float: right;
+				font-family: QuicksandBook, Helvetica, Arial, sans-serif;
+				padding: 45px 0px 0px 0px;
+				text-align: right;}
+			/*.wrapper {
+				width: 960px;
+				margin: 0px auto;
+				background-image: url("../images/bg-triangle.png");
+				background-repeat: no-repeat;
+				background-position: 0px 0px;
+				text-align: left;}*/
+			.logo {
+				margin-bottom: 20px;}
+			h1, h2 {
+				font-family: QuicksandBook, Helvetica, Arial, sans-serif;
+				font-weight: normal;
+				text-transform: uppercase;}
+			h1 {
+				font-size: 240%;
+				margin-top: 140px;}
+			.date {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 75%;
+				color: #b5c1ad;}
+			.intro {
+				clear: left;
+				font-size: 90%;
+				line-height: 1.4em;}
+			.main-story {
+				background-image: url("../images/triangles.png");
+				background-repeat: no-repeat;
+				background-position: 122px 142px;
+				height: 570px;}
+			.more-articles {
+				border-top: 1px solid #ffffff;
+				padding: 10px;}
+			.more-articles p {
+				border-bottom: 1px solid #807c72;
+				padding: 5px 0px 15px 0px;
+				font-size: 80%;}
+			.more-articles p:last-child {
+				border-bottom: none;}
+			.footer {
+				clear: both;
+				background: rgba(0, 0, 0, 0.2);
+				padding: 5px 10px;}
+			.footer p {
+				font-family: Helvetica, Arial, sans-serif;
+				font-size: 75%;
+				text-align: right;}
+			.footer a {
+				color: #807c72;}
