@@ -203,22 +203,24 @@ h2{
 
 			/*@font_face is a CSS rule which allows you to show a font on a Web page even if that
 			font is not installed on the users' computer */
-			@font-face {
+			/*@font-face {
 				font-family: 'QuicksandBook';
-				src: url('fonts/Quicksand_Book-webfont.eot');
-				src: url('fonts/Quicksand_Book-webfont.eot?#iefix') format('embedded-opentype'),
-					url('fonts/Quicksand_Book-webfont.woff') format('woff'),
-					url('fonts/Quicksand_Book-webfont.ttf') format('truetype'),
-					url('fonts/Quicksand_Book-webfont.svg#QuicksandBook') format('svg');
+				src: url('../dist/fonts/Quicksand_Book-webfont.eot');
+				src: url('..dist/fonts/Quicksand_Book-webfont.eot?#iefix') format('embedded-opentype'),
+					url('../dist/fonts/Quicksand_Book-webfont.woff') format('woff'),
+					url('../dist/fonts/Quicksand_Book-webfont.ttf') format('truetype'),
+					url('../dist/fonts/Quicksand_Book-webfont.svg#QuicksandBook') format('svg');
 				font-weight: normal;
-				font-style: normal;}
+				font-style: normal;}*/
 			body {
 				color: #ffffff;
 				background: #c64b14 url("../images/background.png");
 				font-family: Georgia, "Times New Roman", Times, serif;
 				font-size: 90%;
 				margin: 0px;
-				text-align: center;}
+				text-align: center;
+
+			}
 			a {
 				color: #b88971;
 				text-decoration: none;}
@@ -262,7 +264,7 @@ h2{
 				font-size: 90%;
 				line-height: 1.4em;
 			}
-			.main-story {
+		/*	.main-story {
 				background-image: url("../images/triangles.png");
 				background-repeat: no-repeat;
 				background-position: 122px 142px;
@@ -294,6 +296,6 @@ h2{
 				  grid-gap: 1em;
 				}
 
-				header, footer {
-  			grid-column: 1 / 4;
-				}
+				.container {
+			  position: relative;
+			  width: 50%;*/
